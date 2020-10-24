@@ -1,0 +1,11 @@
+{
+  "name": "@daslaf/rx-effects",
+  "version": "0.0.1",
+  "description": "Utilities for handling side effects with rxjs and react hooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Osman Cea <osman.cea@gmail.com>",
+  "license": "MIT"
+}
