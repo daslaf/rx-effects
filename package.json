@@ -2,14 +2,18 @@
   "name": "@daslaf/rx-effects",
   "version": "0.0.1",
   "description": "Utilities for handling side effects with rxjs and react hooks",
-  "main": "index.js",
+  "main": "dist/lib/index.js",
+  "module": "dist/lib/index.esm.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --outDir dist/lib --declarationDir dist/types --declaration true && rollup -c"
   },
   "author": "Osman Cea <osman.cea@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-typescript": "^6.0.0",
     "prettier": "^2.1.2",
+    "rollup": "^2.32.1",
+    "tslib": "^2.0.3",
     "typescript": "^4.0.3"
   }
 }
