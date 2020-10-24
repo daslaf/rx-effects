@@ -8,6 +8,8 @@ const external = [
 
 export default {
   input: 'src/index.ts',
+  external: external,
+  plugins: [typescript()],
   output: [
     {
       format: 'cjs',
@@ -21,5 +23,4 @@ export default {
       file: packageJSON.module,
     },
   ],
-  plugins: [typescript()],
 };
