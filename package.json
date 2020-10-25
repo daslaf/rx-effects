@@ -1,5 +1,5 @@
 {
-  "name": "@daslaf/rx-effects",
+  "name": "@osman.cea/rx-effects",
   "version": "0.0.1",
   "description": "Utilities for handling side effects with rxjs and react hooks",
   "main": "dist/lib/index.js",
