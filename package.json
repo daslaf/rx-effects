@@ -2,19 +2,18 @@
   "name": "@osman.cea/rx-effects",
   "version": "0.0.2",
   "description": "Utilities for handling side effects with rxjs and react hooks",
-  "module": "esm/index.js",
-  "main": "cjs/index.js",
-  "types": "esm/index.d.ts",
+  "module": "dist/lib/esm/index.js",
+  "main": "dist/lib/cjs/index.js",
+  "types": "dist/types/index.d.ts",
   "files": [
     "cjs",
     "esm"
   ],
   "scripts": {
     "prepare": "yarn build",
-    "build": "yarn build:esm && yarn build:cjs",
-    "build:esm": "tsc --p tsconfig.esm.json",
-    "build:cjs": "tsc --p tsconfig.cjs.json",
-    "start": "rollup -c -w",
+    "build:types": "tsc --declarationDir dist/types --declaration true --emitDeclarationOnly",
+    "build": "yarn build:types && rollup -c",
+    "start": "concurrently \"yarn build:types --watch\" \"rollup -c -w\"",
     "test": "jest"
   },
   "author": "Osman Cea <osman.cea@gmail.com>",
@@ -38,9 +37,10 @@
     "react-dom": ">=16.8.0"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^15.1.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-typescript": "^6.0.0",
     "@types/react": "^16.9.53",
+    "concurrently": "^5.3.0",
     "husky": "^4.3.0",
     "jest": "^26.6.1",
     "prettier": "^2.1.2",
@@ -48,7 +48,6 @@
     "react": "^17.0.1",
     "rollup": "^2.32.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-typescript2": "^0.28.0",
     "typescript": "^4.0.3"
   },
   "bugs": {
