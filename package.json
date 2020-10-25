@@ -1,6 +1,6 @@
 {
   "name": "@osman.cea/rx-effects",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Utilities for handling side effects with rxjs and react hooks",
   "module": "dist/lib/esm/index.js",
   "main": "dist/lib/cjs/index.js",
