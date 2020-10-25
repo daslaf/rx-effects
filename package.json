@@ -13,7 +13,7 @@
   "author": "Osman Cea <osman.cea@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:daslaf/rx-effects.git"
+    "url": "git+ssh://git@github.com/daslaf/rx-effects.git"
   },
   "license": "MIT",
   "husky": {
@@ -41,5 +41,9 @@
     "react": "^17.0.1",
     "rollup": "^2.32.1",
     "typescript": "^4.0.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/daslaf/rx-effects/issues"
+  },
+  "homepage": "https://github.com/daslaf/rx-effects#readme"
 }
