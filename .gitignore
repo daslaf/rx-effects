@@ -1,4 +1,8 @@
 node_modules
 dist
+yarn-error.log
+esm
+cjs
 
+.DS_Store
 .vscode
